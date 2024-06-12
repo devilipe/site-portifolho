@@ -4,9 +4,16 @@
 }
 
 body {
+    height: 100vh;
+    box-sizing: border-box;
     background-color: black;
     color: white;
 }
 .trecho-destacado {
     color: red;
+}
+
+.front {
+    display: flex;
+    align-items: center;
 }
