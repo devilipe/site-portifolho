@@ -1,0 +1,174 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte Arial */
+    background: #f4f4f4; /* Fundo cinza claro */
+    color: #333; /* Texto em cinza escuro */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; /* Branco para o cabeçalho */
+    border-bottom: 2px solid #ddd; /* Linha sutil de separação */
+    padding: 20px 0; /* Ajuste no padding */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra discreta */
+    animation: slideDown 0.5s ease;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: #333; /* Cor neutra para os links */
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+header nav a:hover {
+    color: #555; /* Cor mais escura ao passar o mouse */
+}
+
+.hero {
+    height: 100vh;
+    background: #e0e0e0; /* Cinza claro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero a {
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #333; /* Cor neutra para o botão */
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero a:hover {
+    background-color: #555; /* Cor mais escura para hover */
+}
+
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project {
+    width: 280px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px;
+    color: #333;
+}
+
+.project p {
+    font-size: 16px;
+    margin: 0 20px 20px;
+    color: #555;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contato a {
+    color: #333; /* Cor neutra */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Branco no footer */
+    border-top: 2px solid #ddd; /* Linha discreta no topo */
+    font-size: 14px;
+    color: #777; /* Cinza mais claro para o texto do rodapé */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
